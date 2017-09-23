@@ -1,0 +1,220 @@
+h1{
+text-align: center;
+padding: 1rem 0;
+background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlXOPFrYJRzZ-PCNjR0Lobi920_WPVDH0JHAsWo2vh67U-5wlD);
+color: white;
+}
+.book{
+    border:1px solid gray;
+    display: flex;
+    flex-direction: column;
+    margin:1rem 0;
+    text-align: center;
+    padding:.5rem;
+}
+.book:first-child{
+  margin-top:0;  
+}
+.book span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin:.5rem;
+    margin-bottom:1rem;
+}
+.book img,
+.formImg{
+    width: 200px;
+    max-width: 100%;
+    align-self: flex-start;
+    max-height: 305px;
+}
+.bookClick{
+    cursor: pointer;
+    position: relative;
+}
+.wrapBook{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.wrapBook p{
+    text-align: left; 
+    max-width: 45%;     
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0;
+    max-width: 95%;
+    min-width: 95%;
+}
+.bookList{
+    width: 550px;
+    max-width: 80%;
+}
+.listTitle{
+    display: flex;
+    justify-content: space-between;
+    margin-top:2rem;
+}
+.listTitle span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.listTitle a,
+.linkBooks,
+form button{
+    padding: 0 .4rem;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: darkred;
+}
+form button{
+   padding: 0 .6rem; 
+   cursor: pointer;
+}
+form button:hover,
+form button:focus{
+    border:1px solid white;
+}
+.linkBooks:hover,
+.linkBooks:focus{
+    color:white;
+}
+
+
+#bookCont{
+    background-color: whitesmoke;
+    box-shadow: 0 1px 8px rgba(0,0,0,.5), 0 1px 8px rgba(0,0,0,0.2);
+    border: none;
+    margin-top: 4.7rem;
+    max-width: 40%;
+}
+.booksListwrap{
+    max-height: 100vh;
+    overflow: auto;
+    margin-top: 1rem;
+}
+#bookCont img{
+    margin:0 auto;
+}
+.contentEmpty{
+    display: none;
+}
+.newBook{
+    background: url(https://images2.alphacoders.com/261/26102.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    height: 100vh;
+}
+.newBook form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 600px;
+    max-width: 100%;
+    background-color: white;
+    padding: 0 2rem 2rem;
+    position: relative;
+    top: 2rem;
+}
+.newBook form button{
+    margin-top: 1rem;
+}
+.deleteButton{
+    position: absolute;
+    right: .5rem;
+}
+textarea {
+   vertical-align: text-top;
+}
+.formWrap{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+label{
+    display: block;
+}
+.linkBooks{
+    align-self: flex-end;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+.newBook h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+@media(max-width: 1015px){
+    #bookCont{
+        max-width: 35%;
+    }
+}
+@media(max-width: 779px){
+    .wrapBook p{
+        max-width: 95%;
+    }
+    .deleteButton{
+        right: 0;
+        top:0;
+    }
+}
+@media(max-width: 750px){
+    .container{
+        flex-wrap: wrap;
+    }
+    #bookCont{
+        max-width: 80%;
+        margin-top: 2rem;
+    }
+    .booksListwrap {
+        max-height: 50vh;
+    }
+}
+@media(max-width: 540px){
+    .wrapLabels{
+        width: 100%;
+        text-align: center;
+    }
+    .wrapLabels label input,
+    .wrapLabels label textarea{
+       width: 100%;
+    }
+    .newBook form{
+        padding: 0 .5rem;
+    }
+}
+@media(max-width: 330px){
+    .listTitle a{
+        width: 100%;
+        text-align: center;
+    }
+    .listTitle span{
+        margin-bottom: .5rem;
+    }
+    .listTitle{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .deleteButton{
+        font-size: .6rem;
+        font-weight: bold;
+    }
+    .newBook h2{
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        margin-top: 1rem; 
+    }
+    .book span{
+        font-size: 1rem;
+    }
+    .wrapBook p{
+        font-size: .9rem;
+    }
+}

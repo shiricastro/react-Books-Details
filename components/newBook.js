@@ -38,7 +38,7 @@ export default class Book extends React.Component{
 	render(){
 			return <div className="newBook">
 			<form>
-				<Link to="/Books" className="linkBooks">Back To Books Page</Link>
+				<Link to="/Books" className="linkBooks">Back</Link>
 				<h2>Add New Book</h2>
 				<div className="formWrap">
 					<div className="wrapLabels">
